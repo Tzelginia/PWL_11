@@ -22,7 +22,6 @@ class Todo extends Model
     protected $casts = [
         'done' => 'boolean',
     ];
-
     public function user()
     {
         return $this->belongsTo(User::class);
